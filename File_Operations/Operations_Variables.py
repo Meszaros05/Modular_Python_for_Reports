@@ -19,7 +19,7 @@ target_JSON_file=API_var.filename
 download_folder=Path(r"~Downloads")
 
 #!!!!!!!!!!!!!!!!!!!!!!!
-downloaded_JSON_file=API_var.downloaded_JSON_file
+#downloaded_JSON_file=API_var.downloaded_JSON_file
 
 
 ################################################

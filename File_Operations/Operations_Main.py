@@ -8,18 +8,16 @@ import sys
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 from Helper.Help_Functions import Waiter as help_waiter
 import File_Operations.Operations_Variables as var
-from API_Caller.API_Variables import downloaded_JSON_file as API_var
-
-
+import Main_Variables as main_var
 
 def Convert_JSON_to_EXCEL ():
     
     
-    print(var.downloaded_JSON_file)
+    print(main_var.downloaded_JSON_file)
     # Check if the variable contains data
-    if  var.downloaded_JSON_file is not None:
+    if  main_var.downloaded_JSON_file is not None:
         # Load JSON data from variable
-        data = var.downloaded_JSON_file
+        data = main_var.downloaded_JSON_file
 
         # Extract the "objects" key
         record = data.get("objects", [])
@@ -35,7 +33,6 @@ def Convert_JSON_to_EXCEL ():
         print(f"Excel file created: {var.target_file_convention}")
     else:
         print("JSON data is not available in API_var.downloaded_JSON_file")
-
     
 
 

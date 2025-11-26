@@ -30,7 +30,7 @@ target_folder=Path(r"C:\Users\a829052\Downloads")   #~Downloads/Claroty/XLSX/Rep
 target_file_PATH=Path(target_folder / target_file_convention)
 current_folder=Path(__file__).resolve()
 download_folder=Path(r"~Downloads")
-xlsx_filename="Claroty_Export"  #name of the attachment
+xlsx_filename="Claroty_Export.xlsx"  #name of the attachment
 
 
 

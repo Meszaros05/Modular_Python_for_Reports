@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 import Helper.Help_Functions as help_waiter
 import API_Caller.API_Variables as var
+import Main_Variables as main_var
 
 # Disable SSL warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -46,14 +47,11 @@ def fetch_sites(token):
     response.raise_for_status()
     return response.json()
 
-var.downloaded_JSON_file
+main_var.downloaded_JSON_file
 def main_API_Handler():
     var.token = get_token()
     print(var.token)
-    var.downloaded_JSON_file=fetch_sites(var.token)
-
-
-
+    main_var.downloaded_JSON_file=fetch_sites(var.token)
 
     
 

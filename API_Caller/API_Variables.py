@@ -17,7 +17,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 #############################################
 #API type
 Sites_API="/ranger/sites"                               #Sites export
-Licenses_API_Site_Code=""                                                               #configured manually (ID of the site)
+Licenses_API_Site_Code="21"                                                               #configured manually (ID of the site)
 Licenses_API="/ranger/license/"+Licenses_API_Site_Code  #Licenses export
 
 API_PATH=Sites_API                                                                            #Configured manually (Sites_API, Licenses_API, etc)
@@ -42,12 +42,12 @@ token=None
 
 current_file=Path(__file__).resolve()
 target_folder=Path(r"C:\Users\a829052\Downloads")   #~Downloads/Claroty/JSON/filename_*/...
-filename=f"{filename_Sites}.json"                                                   #should be substituted the filename of the reported topic 
+filename=f"{filename_Licenses}.json"                                                   #should be substituted the filename of the reported topic 
 download_folder=Path(r"~Downloads")
 #abs_path_target_file=os.path.join(target_folder,filename)
 abs_path_target_file=target_folder/filename
 
-downloaded_JSON_file= None
+
                
 
 
