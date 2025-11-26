@@ -41,8 +41,9 @@ token=None
 
 
 current_file=Path(__file__).resolve()
-target_folder=Path(r"C:\Users\a829052\Downloads")   #~Downloads/Claroty/JSON/filename_*/...
-filename=f"{filename_Licenses}.json"                                                   #should be substituted the filename of the reported topic 
+target_folder=Path(r"~/Downloads/Claroty_Sites_Reports")                                                 #target_folder=Path(r"C:\Users\a829052\Downloads") 
+#target_folder=Path(r"~/Downloads/Claroty_Licenses_Reports")     
+filename=f"{filename_Sites}.json"                                                   #should be substituted the filename of the reported topic 
 download_folder=Path(r"~Downloads")
 #abs_path_target_file=os.path.join(target_folder,filename)
 abs_path_target_file=target_folder/filename
